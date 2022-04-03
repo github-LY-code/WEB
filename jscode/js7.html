@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // \d数字 \w 字母、数字、下划线
+        // ^RegExpObj 开头
+        // RegExpObj$ 以...结尾
+        var reg = new RegExp("\\w{3,6}");
+        var reg1 = /^\d{3,6}/;
+        document.write(reg.test("ww")+"<br>");
+        document.write(reg1.test("1www")+"<br>");
+        var reg2 = /^[a-z]{6,12}$/
+        var reg3 = new RegExp("^\\w{3,6}");
+        document.write(reg2.test("lisiii")+"<br>");
+
+        var str = "https:\\www.baidu.com"+'刘洋';
+        var encode = encodeURI(str);
+        document.write(encode+"<br>");
+        document.write(decodeURI(encode)+"<br>");
+
+        // 会把 : 与 \\ 也进行转换
+        encode = encodeURIComponent(str);
+        document.write(encode+"<br>");
+        document.write(decodeURIComponent(encode)+"<br>");
+
+        str = "123abc"; 
+        var num = parseInt(str);
+        document.write(num+1+"<br>");
+
+        var val = NaN;
+        document.write(isNaN(val));
+
+        // 将字符串转成脚本执行
+        str = "alert('ok ok ok');";
+        eval(str);
+    </script>
+</body>
+</html>

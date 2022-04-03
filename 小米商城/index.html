@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: azure;
+        }
+        .container {
+            width: 96%;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: url(./img/bg.jpeg) no-repeat center;
+            background-size: cover;
+        }
+        .nav {
+            position: relative;
+            width: 300px;
+            background-color: darkgrey;
+            padding: 20px 0px;
+        }
+        .classify {
+            position: relative;
+            font-size: 16px;
+            color: white;
+            width: 260px;
+            padding: 10px 20px;
+        }
+        .classify > span {
+            position: absolute;
+            right: 20px;
+        }
+        .classify:hover {
+            background-color: #ff6700;
+        }
+        .shop-item {
+            position: absolute;
+            height: 450px;
+            background-color: #fff;
+            top: 0px;
+            left: 300px;
+            display: none;
+        }
+        table {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .table-img img {
+            width: 40px;
+        }
+        .classify:hover + .shop-item, .shop-item:hover {
+            display: block;
+        }
+        .shop-item table tr td {
+            padding-top: 15px;
+            padding-bottom: 13px;
+        }
+        .table-img {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .table-text a{
+            white-space: nowrap;
+            width: 160px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+        }
+        .shop-item table tr td a {
+            line-height: 40px;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+        .shop-item table tr td:hover a, .table-img:hover + .table-text a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="classify">手机 <span>></span></div> 
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/rn11.webp"></td>
+                        <td class="table-text"><a href="">Note11 Pro 系列</a></td>
+                        <td class="table-img"><img width="40px" src="./img/x11u.webp"></td>
+                        <td class="table-text"><a href="">Xiaomi 11 Ultra</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n105.webp"></td>
+                        <td class="table-text"><a href="">Note 10 5G</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n94.webp"></td>
+                        <td class="table-text"><a href="">Redmi Note 9 4G</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img width="40px" src="./img/n115.webp"></td>
+                        <td class="table-text"><a href="">Note 11 5G</a></td>
+                        <td class="table-img"><img width="40px" src="./img/x11p.webp"></td>
+                        <td class="table-text"><a href="">Xiaomi 11 Pro</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n10p.webp"></td>
+                        <td class="table-text"><a href="">Note 10 Pro</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n95.webp"></td>
+                        <td class="table-text"><a href="">Redmi Note 9 5G</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/rn11.webp"></td>
+                        <td class="table-text"><a href="">Note11 Pro 系列</a></td>
+                        <td class="table-img"><img width="40px" src="./img/x11u.webp"></td>
+                        <td class="table-text"><a href="">Xiaomi 11 Ultra</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n105.webp"></td>
+                        <td class="table-text"><a href="">Note 10 5G</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n94.webp"></td>
+                        <td class="table-text"><a href="">Redmi Note 9 4G</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img width="40px" src="./img/n115.webp"></td>
+                        <td class="table-text"><a href="">Note 11 5G</a></td>
+                        <td class="table-img"><img width="40px" src="./img/x11p.webp"></td>
+                        <td class="table-text"><a href="">Xiaomi 11 Pro</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n10p.webp"></td>
+                        <td class="table-text"><a href="">Note 10 Pro</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n95.webp"></td>
+                        <td class="table-text"><a href="">Redmi Note 9 5G</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/rn11.webp"></td>
+                        <td class="table-text"><a href="">Note11 Pro 系列</a></td>
+                        <td class="table-img"><img width="40px" src="./img/x11u.webp"></td>
+                        <td class="table-text"><a href="">Xiaomi 11 Ultra</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n105.webp"></td>
+                        <td class="table-text"><a href="">Note 10 5G</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n94.webp"></td>
+                        <td class="table-text"><a href="">Redmi Note 9 4G</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img width="40px" src="./img/n115.webp"></td>
+                        <td class="table-text"><a href="">Note 11 5G</a></td>
+                        <td class="table-img"><img width="40px" src="./img/x11p.webp"></td>
+                        <td class="table-text"><a href="">Xiaomi 11 Pro</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n10p.webp"></td>
+                        <td class="table-text"><a href="">Note 10 Pro</a></td>
+                        <td class="table-img"><img width="40px" src="./img/n95.webp"></td>
+                        <td class="table-text"><a href="">Redmi Note 9 5G</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">电脑 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/x65.webp"></td>
+                        <td class="table-text"><a href="">Redmi 智能电视X65 2021新款</a></td>
+                        <td class="table-img"><img src="./img/s43.webp"></td>
+                        <td class="table-text"><a href="">小米电视 ES43 2021款</a></td>
+                        <td class="table-img"><img src="./img/p75.webp"></td>
+                        <td class="table-text"><a href="">小米电视5 Pro 75英寸</a></td>
+                        <td class="table-img"><img src="./img/665.webp"></td>
+                        <td class="table-text"><a href="">小米电视6 75英寸 OLED</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/x65.webp"></td>
+                        <td class="table-text"><a href="">Redmi 智能电视X65 2021新款</a></td>
+                        <td class="table-img"><img src="./img/s43.webp"></td>
+                        <td class="table-text"><a href="">小米电视 ES43 2021款</a></td>
+                        <td class="table-img"><img src="./img/p75.webp"></td>
+                        <td class="table-text"><a href="">小米电视5 Pro 75英寸</a></td>
+                        <td class="table-img"><img src="./img/665.webp"></td>
+                        <td class="table-text"><a href="">小米电视6 75英寸 OLED</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/x65.webp"></td>
+                        <td class="table-text"><a href="">Redmi 智能电视X65 2021新款</a></td>
+                        <td class="table-img"><img src="./img/s43.webp"></td>
+                        <td class="table-text"><a href="">小米电视 ES43 2021款</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">笔记本 平板 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/air13.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook Air 13</a></td>
+                        <td class="table-img"><img src="./img/rb15.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook 15</a></td>
+                        <td class="table-img"><img src="./img/rg.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook G 2021款</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/air13.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook Air 13</a></td>
+                        <td class="table-img"><img src="./img/rb15.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook 15</a></td>
+                        <td class="table-img"><img src="./img/rg.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook G 2021款</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/air13.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook Air 13</a></td>
+                        <td class="table-img"><img src="./img/rg.webp"></td>
+                        <td class="table-text"><a href="">RedmiBook G 2021款</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">家电 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/bx.webp"></td>
+                        <td class="table-text"><a href="">冰箱</a></td>
+                        <td class="table-img"><img src="./img/bx.webp"></td>
+                        <td class="table-text"><a href="">冰箱</a></td>
+                        <td class="table-img"><img src="./img/bx.webp"></td>
+                        <td class="table-text"><a href="">冰箱</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/xyj.png"></td>
+                        <td class="table-text"><a href="">洗衣机</a></td>
+                        <td class="table-img"><img src="./img/xyj.png"></td>
+                        <td class="table-text"><a href="">洗衣机</a></td>
+                        <td class="table-img"><img src="./img/xyj.png"></td>
+                        <td class="table-text"><a href="">洗衣机</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/jqr.jpg"></td>
+                        <td class="table-text"><a href="">扫地机器人</a></td>
+                        <td class="table-img"><img src="./img/jqr.jpg"></td>
+                        <td class="table-text"><a href="">扫地机器人</a></td>
+                        <td class="table-img"><img src="./img/jqr.jpg"></td>
+                        <td class="table-text"><a href="">扫地机器人</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/kt.png"></td>
+                        <td class="table-text"><a href="">空调</a></td>
+                        <td class="table-img"><img src="./img/kt.png"></td>
+                        <td class="table-text"><a href="">空调</a></td>
+                        <td class="table-img"><img src="./img/kt.png"></td>
+                        <td class="table-text"><a href="">空调</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">出行 穿戴 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/sb.webp"></td>
+                        <td class="table-text"><a href="">Redmi 手表</a></td>
+                        <td class="table-img"><img src="./img/sh.webp"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/sb.webp"></td>
+                        <td class="table-text"><a href="">Redmi 手表</a></td>
+                        <td class="table-img"><img src="./img/sh.webp"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/sb.webp"></td>
+                        <td class="table-text"><a href="">Redmi 手表</a></td>
+                        <td class="table-img"><img src="./img/sh.webp"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/sb.webp"></td>
+                        <td class="table-text"><a href="">Redmi 手表</a></td>
+                        <td class="table-img"><img src="./img/sh.webp"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/sb.webp"></td>
+                        <td class="table-text"><a href="">Redmi 手表</a></td>
+                        <td class="table-img"><img src="./img/sh.webp"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/sb.webp"></td>
+                        <td class="table-text"><a href="">Redmi 手表</a></td>
+                        <td class="table-img"><img src="./img/sh.webp"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">智能 路由器 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/dog.webp"></td>
+                        <td class="table-text"><a href="">CyberDog</a></td>
+                        <td class="table-img"><img src="./img/dy.jpg"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                        <td class="table-img"><img src="./img/xa.png"></td>
+                        <td class="table-text"><a href="">小爱老师</a></td>
+                        <td class="table-img"><img src="./img/xa.png"></td>
+                        <td class="table-text"><a href="">小爱老师</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/dog.webp"></td>
+                        <td class="table-text"><a href="">CyberDog</a></td>
+                        <td class="table-img"><img src="./img/dy.jpg"></td>
+                        <td class="table-text"><a href="">小米手环</a></td>
+                        <td class="table-img"><img src="./img/xa.png"></td>
+                        <td class="table-text"><a href="">小爱老师</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/ly.webp"></td>
+                        <td class="table-text"><a href="">路由器</a></td>
+                        <td class="table-img"><img src="./img/ly.webp"></td>
+                        <td class="table-text"><a href="">路由器</a></td>
+                        <td class="table-img"><img src="./img/ly.webp"></td>
+                        <td class="table-text"><a href="">路由器</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">电源 配件 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/cdb.webp"></td>
+                        <td class="table-text"><a href="">充电宝</a></td>
+                        <td class="table-img"><img src="./img/cdb.webp"></td>
+                        <td class="table-text"><a href="">充电宝</a></td>
+                        <td class="table-img"><img src="./img/cdb.webp"></td>
+                        <td class="table-text"><a href="">充电宝</a></td>
+                        <td class="table-img"><img src="./img/cdb.webp"></td>
+                        <td class="table-text"><a href="">充电宝</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">健康 儿童 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/ys.jpg"></td>
+                        <td class="table-text"><a href="">电动牙刷</a></td>
+                        <td class="table-img"><img src="./img/hb.jpg"></td>
+                        <td class="table-text"><a href="">滑板</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/ys.jpg"></td>
+                        <td class="table-text"><a href="">电动牙刷</a></td>
+                        <td class="table-img"><img src="./img/hb.jpg"></td>
+                        <td class="table-text"><a href="">滑板</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">耳机 音响 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/ys.jpg"></td>
+                        <td class="table-text"><a href="">电动牙刷</a></td>
+                        <td class="table-img"><img src="./img/hb.jpg"></td>
+                        <td class="table-text"><a href="">滑板</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/ys.jpg"></td>
+                        <td class="table-text"><a href="">电动牙刷</a></td>
+                        <td class="table-img"><img src="./img/hb.jpg"></td>
+                        <td class="table-text"><a href="">滑板</a></td>
+                        <td class="table-img"><img src="./img/box.jpg"></td>
+                        <td class="table-text"><a href="">音响</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="classify">生活 箱包 <span>></span></div>
+            <div class="shop-item">
+                <table>
+                    <tr>
+                        <td class="table-img"><img src="./img/bag.webp"></td>
+                        <td class="table-text"><a href="">背包</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/bag.webp"></td>
+                        <td class="table-text"><a href="">背包</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/bag.webp"></td>
+                        <td class="table-text"><a href="">背包</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table-img"><img src="./img/bag.webp"></td>
+                        <td class="table-text"><a href="">背包</a></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

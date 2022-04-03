@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name="" value="打开窗口" id="openB">
+    <input type="button" value="关闭窗口" name="" id="closeB">
+    <script>
+        var openB = document.getElementById("openB");
+        var newWindow;
+        openB.onclick = () => {
+            // open可以打开一个指定窗口，返回窗口对象
+            newWindow = open("https:\\www.bing.com");
+        }
+        var closeB = document.getElementById("closeB");
+        closeB.onclick = () => {
+            // 谁调用就关谁
+            newWindow.close();
+        }
+
+        // one time
+        var timeId = setTimeout(func,2000);
+        function func() {
+            alert("boom...");
+        }
+        // 取消定时器
+        clearTimeout(timeId);
+
+        // times
+        timeId = setInterval(func,2000);
+        // 取消定时器
+        // clearInterval(timeId); 
+    </script>
+
+    <a href="" ></a>
+</body>
+</html>

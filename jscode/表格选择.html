@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        table {
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            width: 120px;
+        }
+
+        th {
+            background-color: yellowgreen;
+        }
+        .over {
+            background: pink;
+        }
+        .out {
+            background: #fff;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            document.getElementById("all").onclick = () => {
+                var ch = document.getElementsByName("cbx");
+                for (var i = 0; i < ch.length; i++) {
+                    ch[i].checked = true;
+                }
+            }
+
+            document.getElementById("not all").onclick = () => {
+                var ch = document.getElementsByName("cbx");
+                for (var i = 0; i < ch.length; i++) {
+                    ch[i].checked = false;
+                }
+            }
+
+            document.getElementById("fx").onclick = () => {
+                var ch = document.getElementsByName("cbx");
+                for (var i = 0; i < ch.length; i++) {
+                    ch[i].checked = ch[i].checked ? false : true;
+                }
+            }
+
+            document.getElementById("fcbx").onclick = () => {
+                var ch = document.getElementsByName("cbx");
+                for (var i = 1; i < ch.length; i++) {
+                    ch[i].checked = ch[0].checked;
+                }
+            }
+
+            var rows = document.getElementsByTagName("tr");
+            for (var i = 0;i < rows.length;i++) {
+                rows[i].onmouseover = function() {
+                   this.className = "over";
+                }
+                rows[i].onmouseout = function() {
+                    this.className = "out";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <th colspan="5">学生信息表</th>
+        <tr>
+            <td><input type="checkbox" name="cbx" id="fcbx"></td>
+            <td>编号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>操作</td>
+        </tr>
+        <tr class="row_name">
+            <td><input type="checkbox" name="cbx"></td>
+            <td>1</td>
+            <td>柳大华</td>
+            <td>33</td>
+            <td><a href="javascript:void(0);" onclick="del(this);">删除</a></td>
+        </tr>
+        <tr class="row_name">
+            <td><input type="checkbox" name="cbx"></td>
+            <td>2</td>
+            <td>张建文</td>
+            <td>32</td>
+            <td><a href="javascript:void(0);" onclick="del(this);">删除</a></td>
+        </tr>
+        <tr class="row_name">
+            <td><input type="checkbox" name="cbx"></td>
+            <td>3</td>
+            <td>张学友</td>
+            <td>35</td>
+            <td><a href="javascript:void(0);" onclick="del(this);">删除</a></td>
+        </tr>
+    </table>
+    <div id="input">
+        <input type="button" value="全选" id="all">
+        <input type="button" value="全不选" id="not all">
+        <input type="button" value="反选" id="fx">
+    </div>
+</body>
+
+</html>

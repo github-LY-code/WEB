@@ -1,0 +1,12 @@
+.block {
+    background-color: green;
+    color: white;
+    /* display: inline; */
+    width: 200px;
+} 
+.inline {
+    width: 200px;
+    background-color: yellow;
+    color: aqua;
+    display: block;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电灯开关</title>
+</head>
+<body>
+    <img src="off.gif" id="light" alt="">
+    <script>
+        var flag = false;
+        var light = document.getElementById("light");
+        light.onclick = () => {
+            if (flag === false) {
+                light.src = "on.gif";
+                flag = true;
+            } else {
+                light.src = "off.gif";
+                flag = false;
+            }
+        }
+    </script>
+</body>
+</html>

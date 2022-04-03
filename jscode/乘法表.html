@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乘法表</title>
+    <style>
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        alert(add(2,2,1));
+        function add() {
+            var ans = 0;
+            for (var i = 0;i < arguments.length;i++) {
+                ans += arguments[i];
+            }
+            return ans;
+        }
+        document.write("<table align='center'>")
+        for (var i = 1;i <= 9;i++) {
+            document.write("<tr>")
+            for (var j = 1;j <= i;j++) {
+                document.write("<td>");
+                document.write(j+'*'+i+'='+i*j+'&nbsp;');
+                document.write("</td>")
+            }
+            document.write('</br>')
+            document.write("</tr>")
+        }
+        document.write('</table>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

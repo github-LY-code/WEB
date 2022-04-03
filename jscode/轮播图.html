@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="./banner_1.jpg" id="pic"  alt="">
+    <script>
+        var pic = document.getElementById("pic");
+        var count = 0;
+        disply();
+        function disply() {
+            count++;
+            count = count==4 ? 1:count;
+            pic.src="./banner_"+count+".jpg";
+        }
+        setInterval(disply,2000);
+    </script>
+</body>
+</html>

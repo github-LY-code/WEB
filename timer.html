@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        #timer { color: red; }
+    </style>
+    <script>
+        window.onload = () => {
+            var sec = 5;
+            var span = document.getElementById('timer');
+            var timer = setInterval(
+                function() {
+                    sec --;
+                    if (sec == 0) {
+                        window.location = "https://www.baidu.com";
+                    } else {
+                        span.innerText = sec;
+                    }
+                }
+                ,1000);
+        }
+    </script>
+</head>
+<body>
+    <h1><span id="timer">5</span>秒后跳转...</h1>
+</body>
+</html>

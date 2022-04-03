@@ -1,0 +1,50 @@
+/* h1 */
+h1 { text-align: center; color: green;}
+
+/* felx box */
+.flex-contains-1 {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.flex-contains-1 div {
+    border: 1px solid black;
+}
+
+#box-1 {
+    flex: 2;
+    width: 100px;
+}
+
+#box-2 {
+    flex: 1;
+    width: 200px;
+}
+
+#box-3 {
+    flex: 1;
+    width: 300px;
+}
+
+/* Color box */
+.color-box {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    color: transparent;
+}
+
+/* 窗口大小至少为 800px 背景色才为 plum */
+@media screen and (min-width: 800px) {
+    .color-box {
+        background-color: plum;
+    }
+}
+
+/* 窗口大小至少为 800px 文字颜色才为 black */
+@media screen and (max-width: 800px) {
+    .color-box {
+        color: black;
+    }
+}

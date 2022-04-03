@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input_ {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input {
+            height: 30px;
+            width: 180px;
+        }
+
+        #btn {
+            width: 80px;
+        }
+
+        table {
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            width: 120px;
+        }
+
+        th {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input_">
+        <input type="text" id="id" placeholder="编号">
+        <input type="text" placeholder="姓名" name="" id="name">
+        <input type="text" placeholder="年龄" name="" id="age">
+        <input type="button" name="" id="btn" value="添加">
+    </div>
+    <table>
+        <th colspan="4">学生信息表</th>
+        <tr>
+            <td>编号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>柳大华</td>
+            <td>33</td>
+            <td><a href="javascript:void(0);" onclick="del(this);">删除</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>张建文</td>
+            <td>32</td>
+            <td><a href="javascript:void(0);" onclick="del(this);">删除</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>张学友</td>
+            <td>35</td>
+            <td><a href="javascript:void(0);" onclick="del(this);">删除</a></td>
+        </tr>
+    </table>
+
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onclick = () => {
+            var id = document.getElementById("id").value;
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+
+            var table = document.getElementsByTagName("table")[0];
+            table.innerHTML += "<tr><td>"+id+"</td><td>"+name+"</td><td>"+age+"</td><td><a href=\"javascript:void(0);\" onclick=\"del(this);\">删除</a></td></tr>";
+        }
+        function del(obj) {
+            var tr = obj.parentNode.parentNode;
+            var table = tr.parentNode;
+            table.removeChild(tr);
+        }
+    </script>
+</body>
+
+</html>

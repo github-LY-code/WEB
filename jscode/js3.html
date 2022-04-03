@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = prompt('who are you?', '');
+        if (name == 'Admin') {
+            let pwd = prompt('enter your pwd', '');
+            if (pwd == 'TheMaster') {
+                alert('Welcome');
+            } else if (pwd === null || pwd === '') {
+                alert('Wrong password');
+            } else {
+                alert('Canceled');
+            }
+        } else if (name === '' || name === null) {
+            alert('Canceled');
+        } else {
+            alert('i dont konw you');
+        }
+    </script>
+    <script>
+        var a = null;
+        var b = NaN;
+        var c = 111;
+        var d = "";
+        alert(a || b || c); //111 返回第一个真
+        // 如果都为假返回最后一个值
+    </script>
+    <script>
+        var a = 1;
+        var b = 2;
+        var c = null;
+        var d = 4;
+        alert(a && b && c && d); //111 返回第一个假
+        // 如果都为真返回最后一个值
+    </script>
+    <script>
+        (3 > 0) && alert("aaaa");
+        (0 > 0) && alert("aaaa");
+        alert(alert(1) || 2 || alert(3)); // 显示1再显示2 alert()无返回值
+        alert(alert(1) && alert(2)); //显示1再显示undefined
+        alert(null || 2 && 3 || 4); //显示3 &&优先级更高
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+body {
+    background: url(./../img/login_bg.png) no-repeat center;
+}
+.rg_layout {
+    width: 900px; height: 600px;
+    border: 12px solid whitesmoke;
+    background-color: #fff;
+    margin: 20px auto;
+    display: flex;
+}
+.rg_left {
+    flex: 1;
+    text-align: left;
+}
+.rg_left > p:first-child {
+    color: orange;
+    font-size: 22px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.rg_left > p:nth-child(2) {
+    color: gainsboro;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px;
+}
+.rg_center {
+    margin-top: 35px;
+    height: 35px;
+    /* float: left; */
+    flex: 3;
+}
+.rg_center #username, #password, #email, #name, #tel, #gender, #birthday, #checkcode {
+    height: 30px;
+    width: 200px;
+    border:1px solid wheat;
+    border-radius: 5px;
+}
+.td_left {
+    width: 150px;
+    height: 45px;
+    text-align: right;
+    margin-bottom: 18px;
+}
+.td_right {
+    padding-left: 45px;
+}
+.rg_right {
+    /* float: right; */
+    flex: 1;
+    text-align: right;
+}
+.rg_right p a {
+    color: red;
+    text-decoration: none;
+}
+.verifyNum {
+    height: 35px;
+    vertical-align: middle;
+}
+.submit_btn {
+    width: 120px;
+    background-color: gold;
+    height: 40px;
+}
+
+#checkcode {
+    width: 100px;
+}

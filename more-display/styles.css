@@ -1,0 +1,28 @@
+div {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    flood-color: white;
+    background-color: green;
+    display: inline-block;
+}
+
+/* none */
+.none {
+    display: none;
+}
+/* opacity 透明度 0-1 */
+.opacity-1 {
+    opacity: 1;
+}
+.opacity-5 {
+    opacity: 0.5;
+}
+.opacity-2 {
+    opacity: 0.2;
+}
+
+/* visibility 是否可见 */
+.visibility {
+    visibility: hidden;
+}

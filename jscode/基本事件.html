@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本事件</title>
+    <script>
+        window.onload = function () {
+            // document.getElementById("input_text").onblur = function () {
+            //     alert("失去焦点！:(");
+            // }
+            // document.getElementById("input_text").onmouseover = () => {
+            //     alert("鼠标进入了。");
+            // }
+            /* onmouseenter onmousedown onmouseup*/
+            // document.getElementById("input_text").onmouseout = () => {
+            //     alert("鼠标离开了。");
+            // }
+            // document.getElementById("input_text").onmousedown = (event) => {
+            //     // alert("鼠标离开了。");
+            //     alert(event.button);
+            // }
+            document.getElementById("input_text").onkeydown = (event) => {
+                // alert("鼠标离开了。");
+                alert(event.keyCode);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="" id="input_text">
+</body>
+
+</html>
