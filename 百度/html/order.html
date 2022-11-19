@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+</head>
+
+<body>
+    <section id="overlay">
+
+        <p id="logo">Order your milktea!</p>
+        <hr>
+        <!--在这里进行您的代码编写-->
+        <form action="./submission.html" method="get">
+            <label for="kowei">你想要什么口味的奶茶？</label>
+            <input type="text" name="" id="kouwei" required min="2" max="10">
+            <hr>
+            <label for="mount">你想要几杯</label>
+            <input type="number" name="" id="mount" required min="1" max="4">
+            <hr>
+            <label for="suger">你需要的糖分量</label>
+            <br>
+            无糖<input type="range" name="" id="suger">全糖
+            <hr>
+            <label for="dingliao">你想要什么顶料？</label>
+            <br>
+            <label><input type="checkbox" name="dingliao" id="">冰淇淋</label>
+            <label><input type="checkbox" name="dingliao" id="">奶盖</label>
+            <label><input type="checkbox" name="dingliao" id="">可可粉</label>
+            <hr>
+            <label for="addIce">你需要加冰吗？</label>
+            <br>
+            <label for=""><input type="radio" name="addIce" value="1">加冰</label>
+            <label for=""><input type="radio" name="addIce" value="2">不加冰</label>
+            <hr>
+            <label for="">你想要什么顶料？</label>
+            <select name="" id="">
+                <option value="" selected>冰淇淋</option>
+                <option value="">奶盖</option>
+                <option value="">可可粉</option>
+            </select>
+            <hr>
+            <label for="">你需要加什么料？</label>
+            <select name="" id="">
+                <option value="" selected>珍珠</option>
+                <option value="">波霸</option>
+                <option value="">布丁</option>
+            </select>
+            <hr>
+            <label for="">你要什么规格？</label>
+            <select name="" id="">
+                <option value="" selected>小杯</option>
+                <option value="">中杯</option>
+                <option value="">大杯</option>
+            </select>
+            <hr>
+            <label for="">您还有别的什么要求吗</label>
+            <br>
+            <textarea name="" id="" cols="60" rows="5"></textarea>
+            <hr>
+            <label for="tel">您的联系方式</label>
+            <br>
+            <input type="tel" pattern="^1[3|4|5|7|8]\d{9}$" name="" id="tel">
+            <hr>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+</body>
+
+</html>
