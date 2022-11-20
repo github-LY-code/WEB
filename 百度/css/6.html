@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        鼠标悬浮在按钮上方时背景颜色由白色变为和边框颜色一样
+        利用合适的外边距和内边距来制作按钮
+        按钮点击时，背景颜色加深
+        */
+        div>a {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 50px;
+        }
+
+        div>a:nth-child(1) {
+            border: 1px solid gainsboro;
+            color: black;
+        }
+
+        div>a:nth-child(1):hover {
+            background-color: gainsboro;
+        }
+
+        div>a:nth-child(2) {
+            border: 1px solid rgb(223, 68, 115);
+            color: white;
+            background-color: rgb(223, 68, 115);
+        }
+
+        div>a:nth-child(2):hover {
+            background-color: rgb(207, 10, 69);
+        }
+
+        div>a:nth-child(3) {
+            border: 1px solid rgb(35, 123, 238);
+            color: white;
+            background-color: rgb(35, 123, 238);
+        }
+
+        div>a:nth-child(3):hover {
+            background-color: rgb(6, 97, 217);
+        }
+
+        div>a:nth-child(4) {
+            border: 1px solid rgb(110, 195, 99);
+            color: rgb(110, 195, 99);
+            background-color: white;
+        }
+
+        div>a:nth-child(4):hover {
+            background-color: rgb(110, 195, 99);
+            color: white;
+        }
+
+        div>a:nth-child(5) {
+            border: 1px solid rgb(239, 206, 116);
+            color: rgb(239, 206, 116);
+            background-color: white;
+        }
+
+        div>a:nth-child(5):hover {
+            background-color: rgb(239, 206, 116);
+            color: white;
+        }
+
+        div>a:nth-child(6) {
+            border: 1px solid rgb(110, 195, 99);
+            border-radius: 43.14px;
+            color: white;
+            background-color: rgb(110, 195, 99);
+        }
+
+        div>a:nth-child(6):hover {
+            background-color: rgb(34, 158, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <h4>link-button</h4>
+    <div>
+        <a href="#">Default</a>
+        <a href="#">Danger</a>
+        <a href="#">Success</a>
+        <a href="#">Info</a>
+        <a href="#">Warning</a>
+        <a href="#">Primary</a>
+    </div>
+
+</html>

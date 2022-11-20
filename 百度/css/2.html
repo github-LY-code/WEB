@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        使用伪元素选择器，给表格设置单行背景色为#eee，双号数行为背景色为白色
+        选中所有标题栏，设置背景颜色为黑色，字体为白色
+        应用伪元素选择器，选中第一列单元格，设置背景颜色为黑色，字体为白色，粗体。
+        应用伪元素选择器，选中倍数为 3 的单元格，设置透明度为 0.9 
+        */
+        table {
+            margin: 0 auto;
+        }
+        td {
+            width: 180px;
+            height: 30px;
+            text-align: center;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: #eee;
+        }
+        table tr:nth-child(even) {
+            background-color: #fff;
+        }
+        table thead tr {
+            background-color: #000;
+            color: #fff;
+            font-style: italic;
+        }
+        table tbody tr td:first-child {
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+        }
+        table tbody tr td:nth-child(3n) {
+            color: aqua;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            TABLE SAMPLE
+        </caption>
+        <thead>
+            <tr>
+                <th>title one</th>
+                <th>title two</th>
+                <th>title three</th>
+                <th>title four</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>content1</td>
+                <td>content2</td>
+                <td>content3</td>
+                <td>content4</td>
+            </tr>
+            <tr>
+                <td>content5</td>
+                <td>content6</td>
+                <td>content7</td>
+                <td>content8</td>
+            </tr>
+            <tr>
+                <td>content9</td>
+                <td>content10</td>
+                <td>content11</td>
+                <td>content12</td>
+            </tr>
+            <tr>
+                <td>content13</td>
+                <td>content14</td>
+                <td>content15</td>
+                <td>content16</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

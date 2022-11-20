@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        
+        */
+        body {
+            background-color: whitesmoke;
+        }
+        #content {
+            border: 1px solid black;
+            text-align: center;
+            margin: 10px auto;
+            width: 1000px;
+        }
+
+        #content div {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            text-align: center;
+            line-height: 200px;
+            color: aliceblue;
+            box-sizing: border-box;
+            align-items: top;
+            vertical-align: top;
+        }
+
+        #content div:nth-child(2) {
+            background-color: rgb(51, 120, 218);
+            border-radius: 50%;
+        }
+
+        #content div:nth-child(3) {
+            position: relative;
+            border: 100px solid red;
+            border-right-color: rgb(206, 206, 15);
+            border-bottom-color: green;
+            border-left-color: blueviolet;            
+        }
+
+        #content div:nth-child(3) > span {
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+
+        #content div:nth-child(4) {
+            border: 50px solid red;
+            border-radius: 50%;
+            color: black;
+            line-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1>CSS TEMPLATES using border radius</h1>
+        <div>Blue</div>
+        <div><span class="text">TRIANGLE</span></div>
+        <div>Red</div>
+    </div>
+</body>
+
+</html>
