@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+        .left {
+            width: 200px;
+            height: 100%;
+            background-color: #d16aa5;
+        }
+        .middle {
+            height: 100%;
+            background-color: #86a8e7;
+            position: absolute;
+            top: 0;
+            left: 200px;
+            right: 200px;
+
+        }
+        .right {
+            width: 200px;
+            height: 100%;
+            background-color: #008b74;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .content-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    使用 HTML 与 CSS Position 属性按照如下例图实现三栏式布局。
+    左右两栏宽度固定，中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器
+    比较 position 和 float 的效果，思考它们的异同和应用场景
+    调节浏览器宽度，固定宽度和自适应宽度的效果始终符合预期
+    改变中间一栏的内容长度，以确保在中间一栏较高和右边一栏较高时，父元素的高度始终为子元素中最高的高度
+     -->
+    <div class="container">
+        <div class="left content-center">
+            Left
+        </div>
+        <div class="middle content-center">
+            Middle
+        </div>
+        <div class="right content-center">
+            Right
+        </div>
+    </div>
+</body>
+</html>

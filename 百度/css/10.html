@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        示例图分为头部、底部、左侧，主体内容，右侧
+        头部和底部各自占领屏幕所有宽度。
+        上下部之间的部分是一个三栏布局,左右两栏宽度固定，中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器
+        中间三列区域的高度取决于三个子元素中最高的高度，三列等高。
+        调节浏览器宽度，固定宽度和自适应宽度的效果始终符合预期
+        清除浮动尝试用多种方法，体会它们之间的区别
+        */
+        .wrapper {
+           padding: 10px;
+        }
+        div {
+            border: 5px solid red;
+            border-radius: 5px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .header, .left, .right, .footer {
+            background-color: red;
+        }
+        .header, .footer {
+            text-align: center;
+            color: white;
+            height: 30px;
+            line-height: 30px;
+        }
+        .body {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .left, .right {
+            width: 200px;
+            height: 300px;
+            line-height: 300px;
+            color: white;
+        }
+        .center {
+            width: 100%;
+            line-height: 300px;
+            color: red;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            头部
+        </div>
+        <div class="body">
+            <div class="left">
+                定宽
+            </div>
+            <div class="center">
+                自适应
+            </div>
+            <div class="right">
+                定宽
+            </div>
+        </div>
+        <div class="footer">
+            底部
+        </div>
+    </div>
+</body>
+</html>

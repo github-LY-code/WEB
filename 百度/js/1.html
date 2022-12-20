@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="username" />
+  <e
+  <!-- <script>
+      // const username = document.querySelector("#username");
+      // console.log(username);
+      setTimeout(function () {
+        console.log(4)
+      }, 0)
+      new Promise(function (resolve) {
+        console.log(1)
+        for (var i = 0; i < 10000; i++) {
+          i == 9999 && resolve()
+        }
+        console.log(2)
+      }).then(function () {
+        console.log(5)
+      })
+      console.log(3)
+      // prompt('aaaa');
+      // confirm('aaa')
+    </script> -->
+</body>
+<script>
+  function getLastIDCode(identifyCode) {
+    const w = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
+    const c = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
+    let s = 0;
+    for(let i = 0; i < identifyCode.length; i++) {
+      s += Number(identifyCode[i])*w[i];
+    }
+    const y = s % 11;
+    return c[y];
+  }
+
+  let n = getLastIDCode('51162120001027695');
+  console.log(n);
+</script>
+
+</html>

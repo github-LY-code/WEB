@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        你需要使用伪元素
+        下沉效果需要结合浮动属性实现。
+        给首字母设置合适的字体颜色以及大小
+        */
+        p {
+            width: 300px;
+            background-color: pink;
+            padding: 20px;
+        }
+        p::first-letter {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 100px;
+            color: aquamarine;
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        I am in the Great Sahara Desert for the third sundown in a row. Fouad and I
+        pass back and forth a sun-bleached map of the stars. It’s more of a tug-of-war
+        to be honest. With what remains of the daylight, we commit to memory the
+        positions of spots on the page. We hope to find some correlation in its
+        negative, which slides overhead as the sun rapidly dies.
+    </p>
+</body>
+</html>

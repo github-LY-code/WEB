@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        使用绝对定位文字层，使文字内容在图上元素上居中显示
+        保证图片内容不遮盖文字内容
+        文字层设置透明度
+        调节浏览器宽度高度，文字居中效果始终符合预期
+        使用定位知识将这个图片卡片水平垂直居于浏览器窗口
+        */
+
+        figcaption {
+            position: absolute;
+            text-align: center;
+            width: 888.88px;
+            height: 500px;
+            filter: opacity(80%);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        figcaption div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            width: 450px;
+            color: rgb(173, 24, 24);
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgb(2, 72, 97);
+        }
+
+        figcaption a,
+        figcaption a:visited {
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            padding: 10px;
+            border: 3px solid whitesmoke;
+            text-decoration: none;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: gray;
+            box-shadow: -3px -3px 2px slategray;
+        }
+
+        figure img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <figcaption>
+            <div>
+                <!--文字内容自定-->
+                <h2>Beauty Makeup</h2>
+                <p>
+                    Every Girl loves to be beautiful.
+                    <br>
+                    As the saying goes, there are no ugly Girl in the world.Only lazy women
+                </p>
+                <a href="#">Get in Touch</a>
+            </div>
+        </figcaption>
+        <img src="./img/mountain.jpg" style="height: 500px; ">
+        <!--图片内容自定-->
+    </figure>
+</body>
+
+</html>

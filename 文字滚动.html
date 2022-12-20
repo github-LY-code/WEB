@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字滚动</title>
+    <style>
+        .container {
+            background-color: #bfe;
+            /* overflow: hidden; */
+        }
+
+        .container::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .title {
+            margin: 0;
+            padding: 0;
+            float: left;
+            font-size: 16px;
+            font-weight: normal;
+            margin-left: 20px;
+            border-right: 3px solid #ccc;
+            padding-right: 20px;
+            margin-top: 5px;
+        }
+
+        .list {
+            margin: 0;
+            float: left;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .list li {
+            height: 30px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">最新公告</h1>
+        <ol class="list">
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+        </ol>
+    </div>
+</body>
+<script>
+    const list = document.querySelector('.list')
+    let i = 0
+    const scroll = function () {
+        const timer = setInterval(() => {
+            list.scrollTop = i
+            if (i % 30 === 0) {
+                clearTimeout(timer)
+            }
+            i++
+        }, 16)
+    }
+    const counter = setInterval(() => {
+        scroll()
+        if (i >= (list.children.length - 1) * 30) {
+            i = 0
+            // const reset = setInterval(()=> {
+            //     i--;
+            //     list.scrollTop = i
+            //     if (i === 0) {
+            //         clearInterval(reset)
+            //     }
+            // },1)
+        }
+    }, 2000)    
+</script>
+
+</html>
