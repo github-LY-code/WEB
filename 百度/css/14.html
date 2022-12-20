@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border-top: 5px solid #008b8b;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: -2px -8px 10px #dadada, 2px 8px 10px #dadada;
+            position: relative;
+        }
+
+        .title {
+            color: #008b8b;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        form div:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        label span {
+            display: inline-block;
+            width: 20%;
+            text-align: right;
+            margin-right: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 70%;
+            outline: none;
+            border: none;
+            height: 40px;
+            padding-left: 10px;
+            background-color: #f5f5f5;
+        }
+        select {
+            box-sizing: content-box;
+        }
+        textarea {
+            vertical-align: top;
+            height: 150px;
+        }
+        .submit {
+            text-align: right;
+            width: 70%;
+            display: inline-block;
+        }
+        input[type='submit'] {
+            background-color: #008b8b;
+            width: 70px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        form div:last-child {
+            margin-bottom: 10px;
+        }
+
+        #userName {
+            display: inline-block;
+            width: 70%;
+            padding-left: 10px;
+            background: url(./img/user.png) left center/ 40px 42px no-repeat, #dadada;
+            overflow-x: hidden;
+            vertical-align: middle;
+            /* position: relative; */
+            margin-bottom: 0;
+        }
+        #userName input {
+            width: 100%;
+            padding-left: 0;
+            position: relative;
+            left: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            label {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            label span {
+                display: block;
+                width: 90%;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            
+            select, textarea,input {
+                display: block;
+                width: 90%;
+            }
+
+            #userName {
+                display: block;
+                width: 90%;
+            }
+
+            .submit {
+                width: 90%;
+            }
+
+            input[type='submit'] {
+                background-color: #008b8b;
+                width: 100%;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+     <h1 class="title">Register</h1>
+        <form action="#">
+            <div class="">
+                <label for="">
+                    <span>Full Name</span>
+                    <input type="text" name="fullName" placeholder="Your full name" />
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    <span>User Name</span>
+                    <div id="userName">
+                        <input type="text" name="userName" placeholder="User Name" />
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="Your password" />
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    <span>Address</span>
+                    <select name="address" id="">
+                        <option value="1">China</option>
+                        <option value="2">English</option>
+                        <option value="3">America</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    <span>Suggestion</span>
+                    <textarea name="suggestion" cols="30" rows="30" placeholder="Write something..."></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    <span></span>
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </label>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>

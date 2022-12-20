@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .logo {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        .nav {
+            background-color: #222222;
+            color: #fefefe;
+            position: sticky;
+            top: 0;
+        }
+        .nav ul {
+            height: 40px;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            list-style: none;
+        }
+        .nav ul li {
+            padding: 0 15px;
+            height: 100%;
+            line-height: 40px;
+        }
+        /* .nav ul li:not(:last-child) {
+            margin-right: 30px;
+        } */
+        .nav ul li:hover {
+            background-color: #eeeeee;
+            color: #222222;
+            transition: all 0.2s;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 45%;
+            text-align: center;
+        }
+
+        .main-content .title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .container .main-content:nth-child(odd) {
+            background-color: #fff;
+        }
+        .container .main-content:nth-child(even) {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">logo</div>
+        <div class="nav">
+            <ul>
+                <li>HOME</li>
+                <li>BLOG</li>
+                <li>ARTICLE</li>
+                <li>CONTACT ME</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="title">Main Content Here</div>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio accusantium ipsa delectus tempore,
+                assumenda, repudiandae excepturi quos, voluptates rerum voluptate aspernatur enim quae ut? Sit eos
+                suscipit odit tempora consequuntur dignissimos vitae modi eius nobis quasi ipsam, impedit reiciendis non
+                commodi quaerat repellat possimus deleniti? Dolorem nihil molestias architecto iure, pariatur doloremque
+                nostrum animi cumque. Aliquid commodi esse voluptates vero. Obcaecati, sint beatae. Ab natus tempora
+                magnam neque perferendis magni corrupti, ex reprehenderit voluptate atque, reiciendis illum voluptas
+                officiis! Possimus maxime assumenda ullam saepe molestias inventore exercitationem accusamus dicta
+                eligendi voluptatem, quibusdam nobis consequuntur nulla voluptas debitis voluptates magni? Nisi?
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="title">Main Content Here</div>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio accusantium ipsa delectus tempore,
+                assumenda,
+                repudiandae excepturi quos, voluptates rerum voluptate aspernatur enim quae ut? Sit eos suscipit odit
+                tempora
+                consequuntur dignissimos vitae modi eius nobis quasi ipsam, impedit reiciendis non commodi quaerat
+                repellat possimus
+                deleniti? Dolorem nihil molestias architecto iure, pariatur doloremque nostrum animi cumque. Aliquid
+                commodi esse
+                voluptates vero. Obcaecati, sint beatae. Ab natus tempora magnam neque perferendis magni corrupti, ex
+                reprehenderit
+                voluptate atque, reiciendis illum voluptas officiis! Possimus maxime assumenda ullam saepe molestias
+                inventore
+                exercitationem accusamus dicta eligendi voluptatem, quibusdam nobis consequuntur nulla voluptas debitis
+                voluptates
+                magni? Nisi?
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="title">Main Content Here</div>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio accusantium ipsa delectus tempore,
+                assumenda, repudiandae excepturi quos, voluptates rerum voluptate aspernatur enim quae ut? Sit eos
+                suscipit odit tempora consequuntur dignissimos vitae modi eius nobis quasi ipsam, impedit reiciendis non
+                commodi quaerat repellat possimus deleniti? Dolorem nihil molestias architecto iure, pariatur doloremque
+                nostrum animi cumque. Aliquid commodi esse voluptates vero. Obcaecati, sint beatae. Ab natus tempora
+                magnam neque perferendis magni corrupti, ex reprehenderit voluptate atque, reiciendis illum voluptas
+                officiis! Possimus maxime assumenda ullam saepe molestias inventore exercitationem accusamus dicta
+                eligendi voluptatem, quibusdam nobis consequuntur nulla voluptas debitis voluptates magni? Nisi?
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
